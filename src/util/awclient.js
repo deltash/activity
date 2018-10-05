@@ -1,6 +1,6 @@
 const AWClient = require('../../aw-client-js').AWClient;
 
-let baseURL = "";
+let baseURL = process.env.BASE_URL;
 
 // If running with `npm node dev`, use testing server as origin.
 // Works since CORS is enabled by default when running `aw-server --testing`.
